@@ -6,25 +6,17 @@ Console.Write("Введите число: ");
 int i = int.Parse(Console.ReadLine());
 
 int count=0;
-int result=0;
+int result=number;
 
 if (number>=100)
 {
-    while (count<i)
+    while (count<i-1)
     {
-        // if (count<i+1)                            
-        // {
-        result=number/10;
-        count++;
-        // }
-        // else
-        // {
-        //     Console.Write(result);
-        //     break;
-        // }
+        result=result/10;
+        count=count+1;        
     }
+    result=result%10;
     Console.Write(result);
-            // break;
 }
 else
 {
